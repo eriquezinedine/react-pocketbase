@@ -1,0 +1,1 @@
+export { MockFilterHome } from './ObjectsHome';
