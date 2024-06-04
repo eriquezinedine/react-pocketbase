@@ -8,6 +8,11 @@ export interface ICategory {
     updated: string;
 }
 
+export interface ITable {
+    id: string;
+    number: string;
+    enabled: boolean;
+}
 
 export interface ICategoryMock {
     name: string;

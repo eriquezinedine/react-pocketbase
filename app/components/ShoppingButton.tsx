@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { FaShoppingBasket } from "react-icons/fa";
 import { useUiStore } from '../stores/uiStorage';

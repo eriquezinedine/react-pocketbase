@@ -11,7 +11,6 @@ export enum StatusMenu {
 
 
 interface MenuState {
-
   status: StatusMenu,
   categories: ICategory[];
   products: IProduct[];
@@ -26,8 +25,8 @@ export const useMenuStore = create<MenuState>((set, get) => ({
     categories: [],
     products: [],
   getAll: async () => {
+    set((state) => ({ ...state, status: StatusMenu.Loading }));
     try {
-      set((state) => ({ ...state, status: StatusMenu.Loading }));
       const client = PocketBaseClient.getInstance();
       let categories = await client.pb.collection('category').getFullList<ICategory>();
       let products = await client.pb.collection('product').getFullList<IProduct>();

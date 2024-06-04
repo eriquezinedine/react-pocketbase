@@ -20,7 +20,7 @@ const CategoryItemWidget: FC<CategoryItemProp> = ({
 
   return (
     <div
-      className={`cursor-pointer hover:bg-slate-700 hover:text-white duration-300 text-center flex justify-center items-center rounded-lg ${backgroundClass} ${textClass}`}
+      className={`cursor-pointer  hover:bg-slate-700 hover:text-white duration-300 text-center flex justify-center items-center rounded-lg ${backgroundClass} ${textClass}`}
       style={{ width: '118px', height: '50px', fontSize: '14px' }}
       onClick={onTap}
     >
